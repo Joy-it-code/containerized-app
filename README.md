@@ -33,6 +33,7 @@ mkdir Containerized-app
 cd Containerized-app
 ```
 ![](./img/1.mkdir.png)
+Press I(insert),:wq!(save and exit)
 
 ### Task 1.2: Build the web application
 
@@ -396,7 +397,7 @@ kubectl get services
 **Command:**
 
 ```
- kubectl port-forward --address 0.0.0.0 service/capstone-service 7080:80
+ kubectl port-forward --address 0.0.0.0 service/capstone-service 8080:80
 ```
 
 ![](./img/8d.port.forward.png)
@@ -443,5 +444,22 @@ git config --global user.name "YourUsername"
 git config --global user.email "youremail@example.com"
 git commit -m "Initial commit for static web app"
 ```
+![](./img/9a.git.add.png)
 
 
+### Task 10.2: Push the code to your Github repository
+
+After initializing your Git repository and adding your e-commerce website template, the next step is to push your code to a remote repository on GitHub. This step is crucial for version control and collaboration.
+
++ Create a Remote Repository on GitHub: Log into your GitHub account and create a new repository named Containerization-Project. Leave the repository empty without initializing it with a README, .gitignore, or license. 
+![](./img/9b.repo.name.png)
+![](./img/9c.git.remote.png)
+
+**Commands:**
+
+```
+git remote add origin https://github.com/Joy-it-code/containerized-app.git
+git branch -M main
+git push -u origin main
+```
+![](./img/9d.git.push.png) 
